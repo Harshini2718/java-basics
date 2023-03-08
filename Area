@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Area of the shapes:");
+	 String shape=sc.nextLine();
+	 double ans;
+	 if(shape=="circle"){
+	 System.out.println("Radius: ");
+	 double r=sc.nextDouble();
+	 double pi=3.14;
+	     ans=pi*r*r;
+	      System.out.println("The Area of circle is:"+ans);
+	 }else if(shape=="triangle"){
+	      int b=sc.nextInt();
+	        int h=sc.nextInt();
+	     System.out.print("Base: "+b);
+	     System.out.print("Height: "+h);
+	     ans=1/2*b*h;
+	     System.out.println("The Area of triangle is:"+ans);
+	 }
+	  }
+	}
